@@ -1,0 +1,594 @@
+<0001> gsm48_rr.c:1242 CLASSMARK CHANGE
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_EST_CNF' from RR in state wait for RR connection (location updating) (sapi 0)
+<0005> gsm48_mm.c:403 starting T3210 (loc. upd. timeout) with 20.0 seconds
+<0005> gsm48_mm.c:921 new state wait for RR connection (location updating) -> location updating initiated
+<0001> gsm48_rr.c:666 MON: f=47 lev=-55 snr=109 ber= 14 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-55 rxlev-sub=-55 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 37 37 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 22 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 01 00 35 06 16 03 33 19 81 20 05 60 14 c0 00 00 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 46 38 00 00 00 03 00 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 37 37 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:489 stopping pending (periodic loc. upd. delay) timer T3212
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 1)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 55 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 21 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 66 38 00 00 00 05 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 75 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 79 38 00 00 00 03 03 01 2b ad d5 bd 9f 31 a8 14 7e 8f 60 64 28 2b 5e 9f 78 68 22 ae
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 88 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 ac 38 41 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 bb 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 cc 38 00 00 00 05 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 db 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a1 df 38 00 00 00 03 03 01 2b 04 4c 03 75 c1 e7 10 4a 8c 37 25 d6 9b 1e eb 48 4f 76 b4
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a1 ee 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 12 38 fd 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 21 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 32 38 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 41 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 45 3a cb 00 00 03 03 01 2b 12 f3 4d 85 f5 a3 07 39 c2 92 d1 ad 9c 7d a9 e1 be c8 70
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 54 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 78 38 b5 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 87 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 98 38 00 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 a7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 ab 39 95 00 00 03 03 01 2b 43 7c 31 e1 d4 48 5f 76 b8 26 f2 9a c5 ab 13 3f 4d d0 35
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 ba 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 de 38 62 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a2 ed 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a2 fe 38 00 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 0d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 11 38 00 00 00 03 03 01 2b fb 5a c3 7b 11 e3 4c 49 f5 f6 c7 06 d2 82 dd a1 99 b8 6a
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 20 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 44 38 62 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 53 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 64 38 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 73 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 77 39 00 00 00 03 03 01 2b 31 c1 d4 50 5f 7c 38 21 d2 98 5d aa b9 bf 32 f0 15 84 0f
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 86 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 aa 38 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 b9 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 ca 39 00 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 d9 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a3 dd 38 00 00 00 03 03 01 2b c5 f7 13 06 8d c2 e5 91 8b 2c 67 5d ea b9 8f 32 e4 15 8b
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a3 ec 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 10 39 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 1f 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 30 39 00 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 3f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 43 3b 00 00 00 03 03 01 2b e3 59 89 fa e6 c3 0a d1 c7 1c 52 89 fd a6 c1 ba d0 73 1c
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 52 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 76 39 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 85 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 96 3a 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 a5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 a9 38 00 00 00 03 03 01 2b 24 45 db 73 1b 65 cb 6b 17 6f 4e ac 34 7d d7 61 9e a8 68
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 b8 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 dc 39 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a4 eb 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a4 fc 39 ce 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 0b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 0f 39 00 00 00 03 03 01 2b aa d5 bf 1f 30 08 14 06 8f 42 e4 31 8b 54 67 7f 6a a0 2f
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 1e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 42 38 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 51 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 62 39 00 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 71 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 75 3a 00 00 00 03 03 01 2b e1 f4 48 47 76 b2 a6 f5 ba c7 33 12 95 cd af 15 bc 0f 31
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 84 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 a8 39 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 b7 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 c8 39 bd 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 d7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a5 db 39 44 00 00 03 03 01 2b f4 21 87 58 62 ba a9 b3 3e f5 d0 47 1c 32 89 d5 a6 df 3a
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a5 ea 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 0e 3a 00 00 00 03 10 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 1d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 2e 39 b4 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 3d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 41 3b 00 00 00 03 03 01 2b 25 97 5b 2e bb 5c 73 79 e5 e2 cb 09 97 46 ee b2 cc 75 95
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 50 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 74 3a 00 00 00 03 30 0d 05 18 01 2b 1d af 49 bc 36 f1 d6 c4 5e d3 78 5d e2 b9 89 b2
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 41 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 41 00 00 00 01 22 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 83 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 94 3a 00 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 a3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 a7 3a 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 2)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+send: 00 1f 06 00 00 00 41 00 00 00 03 41 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 b6 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 da 39 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 41 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a6 e9 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a6 fa 3a db 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+<0001> gsm48_rr.c:666 MON: f=47 lev=-53 snr=43 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-53 rxlev-sub=-53 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 09 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 0d 39 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 1c 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 40 38 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 41 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 41 00 00 00 01 52 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 4f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 60 38 18 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 6f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 73 3a 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 82 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 a6 39 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+send: 00 1f 06 00 00 00 41 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 b5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 c6 37 68 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 d5 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=47 lev=-53 snr=21 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-53 rxlev-sub=-53 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 41 00 00 2f 00 18 a7 d9 39 00 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+recv: 0f 00 00 00 00 00 00 00 00 18 a7 e8 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 0c 39 c6 00 00 03 22 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+send: 00 1f 06 00 00 00 41 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 1b 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 41 00 00 00 01 52 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 2c 39 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 3b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 3f 39 9b 00 00 01 41 01 2b 29 c2 9e d1 a8 5c 7e b9 e0 72 c8 25 96 9b 2e eb 5c 4f ba
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 4e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 72 39 00 00 00 03 52 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 81 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 92 39 50 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 a1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 a5 37 39 00 00 03 03 01 2b b3 0d b5 c5 b7 13 36 8d d6 e5 9e cb 28 57 5e be b8 70 72
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:666 MON: f=47 lev=-53 snr=70 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-53 rxlev-sub=-53 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 b4 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 d8 3a 00 00 00 03 52 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+send: 00 1f 06 00 00 00 41 00 00 00 03 59 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a8 e7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a8 f8 38 9d 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 07 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 0b 3a 00 00 00 01 59 01 2b 7b 55 e3 7f 09 e0 06 c8 02 d6 81 9e e0 68 48 2e b6 9c 76
+L1CTL_DATA_IND
+send: 00 1f 06 00 00 00 41 00 00 00 01 44 2d 05 19 08 8a 36 47 01 74 46 62 92 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 1a 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 3e 3a 00 00 00 03 52 0d 05 18 02 2b ab 25 bf 5b 30 3b 54 13 7f 4d e0 35 88 17 26 8e
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 4d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 5e 3b 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 6d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 71 3a 94 00 00 03 03 01 2b 57 1f 7e 88 20 66 98 2a ea 9f 0f 28 04 1e 83 48 61 f6 a8
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 80 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=47 lev=-52 snr=51 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-52 rxlev-sub=-52 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 3a 3a 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 3a 3a 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 a4 39 d3 00 00 01 59 01 2b 90 27 2c 1a 9d cb 29 97 5e ee b8 4c 72 b5 e5 b7 0b 36 87
+L1CTL_DATA_IND
+<0015> lapd_core.c:1319 (dl=0x24288c8) S frame response with F=1 error
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0015> lapd_core.c:1449 (dl=0x24288c8) unsolicited supervisory response!
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+send: 00 1f 06 00 00 00 41 00 00 00 01 44 2d 05 19 08 8a 36 47 01 74 46 62 92 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 b3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 c4 39 0a 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 d3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 a9 d7 3a d0 00 00 03 44 4d 05 12 00 87 0f 70 4d c6 a0 22 73 79 11 ba 1e d7 8e d0 53 2b
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_AUTH_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1644 AUTHENTICATION REQUEST (seq 0)
+<0005> subscriber.c:960 Generating KEY at SIM
+<000f> sim.c:228 got new job: SIM_JOB_RUN_GSM_ALGO (handle=00000006)
+<000f> sim.c:716 go MF
+<000f> sim.c:260 SELECT (file=0x3f00)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 1f 06 00 00 00 41 00 00 00 03 61 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 3f 00
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 0f 00 00 00 00 00 00 00 00 18 a9 e6 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 c0 00 00 00 00 3f 00 01 00 00 00 00 00 0a 93 04 08 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:725 requested path is longer, go child DFgsm
+<000f> sim.c:260 SELECT (file=0x7f20)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 7f 20
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 17 00 00 c0 00 00 00 00 7f 20 02 00 00 00 00 00 0a 93 00 1c 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:557 RUN GSM ALGORITHM
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0x88)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 19 16 00 00 00 a0 88 00 00 10 87 0f 70 4d c6 a0 22 73 79 11 ba 1e d7 8e d0 53
+recv: 03 00 00 00 41 00 00 2f 00 18 aa 0a 38 00 00 00 01 61 01 2b 56 f4 3e c7 50 52 bc 3d b1 d1 b4 5c 77 79 e6 a2 ca f9 65
+L1CTL_DATA_IND
+recv: 17 00 00 00 9f 0c
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0c)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=12)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0c
+recv: 17 00 00 c0 9a db db 91 5a ff 03 af 7b 7c 36 8e 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=12 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:1011 Updating KC on SIM
+<0005> gsm48_mm.c:4312 (ms 1) Received 'MM_EVENT_AUTH_RESPONSE' event in state location updating initiated
+<0005> gsm48_mm.c:1668 AUTHENTICATION RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+<000f> sim.c:228 got new job: SIM_JOB_UPDATE_BINARY (handle=00000005)
+<000f> sim.c:260 SELECT (file=0x6f20)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 1f 06 00 00 00 41 00 00 00 01 66 19 05 54 9a db db 91 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 20
+recv: 0f 00 00 00 00 00 00 00 00 18 aa 19 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 09 6f 20 04 00 11 f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 9)
+<000f> sim.c:313 UPDATE BINARY (offset=0 len=9)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xd6)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 12 16 00 00 00 a0 d6 00 00 09 5a ff 03 af 7b 7c 36 8e 00
+recv: 03 00 00 00 41 00 00 2f 00 18 aa 2a 38 43 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 17 00 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+recv: 0f 00 00 00 00 00 00 00 00 18 aa 39 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 aa 3d 3b 66 00 00 01 79 01 2b 2b 0e 9f 44 68 33 6e 95 ec 6f 0d ec 05 8d c3 25 91 db 2c
+L1CTL_DATA_IND
+<0015> lapd_core.c:1319 (dl=0x24288c8) S frame response with F=1 error
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0015> lapd_core.c:1449 (dl=0x24288c8) unsolicited supervisory response!
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+send: 00 1f 06 00 00 00 41 00 00 00 01 66 19 05 54 9a db db 91 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 aa 4c 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=47 lev=-53 snr=100 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-53 rxlev-sub=-53 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 41 00 00 2f 00 18 aa 70 38 0a 00 00 03 74 4d 05 12 00 87 0f 70 4d c6 a0 22 73 79 11 ba 1e d7 8e d0 53 2b
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x24288c8) N(S) sequence error: N(S)=2, V(R)=3 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 41 00 00 00 03 79 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 aa 7f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 aa 90 39 be 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 aa 9f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 aa a3 37 79 00 00 01 81 01 2b 62 e1 e9 88 4e e6 b4 4a f7 77 06 a6 82 fa e1 83 08 61 94
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 aa b2 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 aa d6 3a 00 00 00 01 99 01 2b ef 7e cc 20 55 d8 3f 1a 90 0b 2c 07 5d c2 b9 91 b2 ec 75
+L1CTL_DATA_IND
+<0015> lapd_core.c:1319 (dl=0x24288c8) S frame response with F=1 error
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0015> lapd_core.c:1449 (dl=0x24288c8) unsolicited supervisory response!
+<0015> lapd_core.c:426 (dl=0x24288c8) sending MDL-ERROR-IND cause 6 from state LAPD_STATE_MF_EST
+<0015> lapdm.c:550 (dl=0x24288c8) sending MDL-ERROR-IND 6
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+<0001> gsm48_rr.c:4986 MDL-Error (cause 6) ignoring
+recv: 0f 00 00 00 00 00 00 00 00 18 aa e5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 aa f6 39 d1 00 00 07 01 03 03 49 06 06 ef 32 8d af 00 00 00 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 ab 05 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab 09 3a 07 00 00 03 86 0d 05 18 03 2b 71 a0 24 78 1b 62 8b 69 a7 6e fa ac 43 3d f1 d1
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 3)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+send: 00 1f 06 00 00 00 41 00 00 00 03 81 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 41 00 00 00 01 88 31 05 19 09 83 36 47 01 74 46 62 92 f0 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 18 ab 18 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=47 lev=-53 snr=90 ber=  0 LAI=460 00 73d1 ID=c9b9 TA=1 pwr=5 TS=1/0
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-53 rxlev-sub=-53 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 41 41 40 18 01 05 01 01 03 49 06 15 39 39 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 41 00 00 2f 00 18 ab 3c 39 55 00 00 03 03 01 2b 27 2b 5a 9f 7b 28 23 5e 99 f8 6a c2 af 11 bc 0c 71 c5 e4
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 ab 4b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab 5c 39 d6 00 00 07 01 03 03 2d 06 1e c9 b9 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 ab 6b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab 6f 39 00 00 00 01 a1 01 2b 92 a8 6d be ad b0 7d b4 21 b7 58 76 ba a6 f3 3a c5 d3 ef
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 ab 7e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab a2 38 00 00 00 03 03 01 2b cc 1c 55 c9 ff 16 c0 0e d0 04 5c 03 79 c1 e2 d0 49 9c 36
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 18 ab b1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab c2 38 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 ff 70 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 18 ab d1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 41 00 00 2f 00 18 ab d5 37 7a 00 00 03 a8 39 05 02 64 f0 00 73 d1 17 05 f4 3c c3 24 0c 2b 58 5f 7a b8 23
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_LOC_UPD_ACCEPT' in MM state location updating initiated
+<0005> gsm48_mm.c:471 stopping pending (loc. upd. timeout) timer T3210
+<0005> subscriber.c:1076 (ms 1) new state U1_UPDATED -> U1_UPDATED
+<0005> subscriber.c:851 Updating LOCI on SIM
+<000e> gsm48_mm.c:2453 Location update accepted
+<0005> gsm48_mm.c:2456 LOCATION UPDATING ACCEPT (mcc 460 mnc 00 lac 0x73d1)
+<0005> gsm48_mm.c:2479 got TMSI 0x3cc3240c (1019421708)
+<0005> subscriber.c:851 Updating LOCI on SIM
+<0005> gsm48_mm.c:1556 TMSI REALLOCATION COMPLETE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+<0005> gsm48_mm.c:2511 follow-on proceed not supported.
+<0005> gsm48_mm.c:461 starting T3240 (RR release timeout) with 10.0 seconds
+<0005> gsm48_mm.c:921 new state location updating initiated -> wait for network command
+<0002> gsm322.c:3831 (ms 1) Event 'EVENT_REG_SUCCESS' for automatic PLMN selection in state 'A1 trying RPLMN'

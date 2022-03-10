@@ -1,0 +1,1389 @@
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=11 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:299 received LOCI from SIM (mcc=460 mnc=00 lac=0x73d1 U1)
+<0005> subscriber.c:600 Requesting SIM file 0x6f20
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f20)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 20
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 09 6f 20 04 00 11 f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 9)
+<000f> sim.c:296 READ BINARY (offset=0 len=9)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 09
+recv: 17 00 00 b0 5a ff 03 af 7b 7c 36 8e 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=9 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:376 received KEY from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f30
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f30)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 30
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 f0 6f 30 04 00 11 f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 240)
+<000f> sim.c:296 READ BINARY (offset=0 len=240)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 f0
+recv: 17 00 00 b0 64 f0 00 64 f0 20 64 f0 70 64 f0 80 54 f4 21 14 f0 40 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=240 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:414 received PLMN selector (mcc=460 mnc=00) from SIM
+<0005> subscriber.c:414 received PLMN selector (mcc=460 mnc=02) from SIM
+<0005> subscriber.c:414 received PLMN selector (mcc=460 mnc=07) from SIM
+<0005> subscriber.c:414 received PLMN selector (mcc=460 mnc=08) from SIM
+<0005> subscriber.c:414 received PLMN selector (mcc=454 mnc=12) from SIM
+<0005> subscriber.c:414 received PLMN selector (mcc=410 mnc=04) from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f31
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f31)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 31
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 01 6f 31 04 00 1a f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 1)
+<000f> sim.c:296 READ BINARY (offset=0 len=1)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 01
+recv: 17 00 00 b0 50 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=1 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:435 received HPPLMN 80 (480 mins) from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f46
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f46)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 46
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 11 6f 46 04 00 0a f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 17)
+<000f> sim.c:296 READ BINARY (offset=0 len=17)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 11
+recv: 17 00 00 b0 00 43 4d 43 43 ff ff ff ff ff ff ff ff ff ff ff ff 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=17 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:458 received SPN CMCC from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f78
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f78)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 78
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 02 6f 78 04 00 1a f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 2)
+<000f> sim.c:296 READ BINARY (offset=0 len=2)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 02
+recv: 17 00 00 b0 00 40 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=2 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:476 received ACC 0040 from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f7b
+<000f> sim.c:228 got new job: SIM_JOB_READ_BINARY (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f7b)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 7b
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 1e 6f 7b 04 00 11 f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 30)
+<000f> sim.c:296 READ BINARY (offset=0 len=30)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b0 00 00 1e
+recv: 17 00 00 b0 64 f0 10 64 f0 30 64 f0 40 64 f0 02 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=30 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:515 received Forbidden PLMN 460 01 from SIM
+<0005> subscriber.c:515 received Forbidden PLMN 460 03 from SIM
+<0005> subscriber.c:515 received Forbidden PLMN 460 04 from SIM
+<0005> subscriber.c:515 received Forbidden PLMN 460 20 from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f40
+<000f> sim.c:228 got new job: SIM_JOB_READ_RECORD (handle=00000004)
+<000f> sim.c:716 go MF
+<000f> sim.c:260 SELECT (file=0x3f00)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 3f 00
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 17 00 00 c0 00 00 00 00 3f 00 01 00 00 00 00 00 0a 93 04 08 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:725 requested path is longer, go child DFtelecom
+<000f> sim.c:260 SELECT (file=0x7f10)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 7f 10
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 17 00 00 c0 00 00 00 00 7f 10 02 00 00 00 00 00 0a 93 01 0e 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:260 SELECT (file=0x6f40)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 40
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 38 6f 40 04 00 11 f0 aa 01 02 01 1c 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1091 selected record (len 28 structure 1)
+<000f> sim.c:331 READ RECORD (rec_no=1 mode=4 len=28)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb2)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b2 01 04 1c
+recv: 17 00 00 b2 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=28 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:327 received MSISDN  from SIM
+<0005> subscriber.c:600 Requesting SIM file 0x6f42
+<000f> sim.c:228 got new job: SIM_JOB_READ_RECORD (handle=00000004)
+<000f> sim.c:260 SELECT (file=0x6f42)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 42
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 17 00 00 c0 00 00 00 c8 6f 42 04 00 11 f0 aa 01 02 01 28 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1091 selected record (len 40 structure 1)
+<000f> sim.c:331 READ RECORD (rec_no=1 mode=4 len=40)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xb2)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 b2 01 04 28
+recv: 17 00 00 b2 ff ff ff ff ff ff ff ff ff ff ff ff f1 ff ff ff ff ff ff ff ff ff ff ff ff 08 91 68 31 08 70 13 05 f0 ff ff ff 00 00 ff 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=40 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:357 received SMSP from SIM (sca=+8613800731500)
+<0005> subscriber.c:560 (ms 1) Done reading SIM card (IMSI=460007465461846 China, China Mobile)
+<0005> subscriber.c:572 -> SIM card registered to 460 00 (China, China Mobile)
+<0005> gsm48_mm.c:4376 (ms 1) Received 'MMR_REG_REQ' event
+<0002> gsm322.c:3831 (ms 1) Event 'EVENT_SIM_INSERT' for automatic PLMN selection in state 'A0 null'
+<000e> gsm322.c:1383 Start search of last registered PLMN (mcc=460 mnc=00  China, China Mobile)
+<0002> gsm322.c:1387 Use RPLMN (mcc=460 mnc=00  China, China Mobile)
+<0002> gsm322.c:811 new state 'A0 null' -> 'A1 trying RPLMN'
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_NEW_PLMN' for Cell selection in state 'C0 null'
+<000e> gsm322.c:3644 Selecting PLMN (mcc=460 mnc=00  China, China Mobile)
+<0003> gsm322.c:3650 Start stored cell selection.
+<0003> gsm322.c:834 new state 'C0 null' -> 'C2 stored cell selection'
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (45..51)
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 0c 08 00 00 00 01 00 00 00 00 2d 00 33
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+recv: 09 01 00 00 00 2d 20 00 00 2e 2d 00 00 2f 33 00 00 30 22 00 00 31 2b 00 00 32 27 00 00 33 35 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 45 rxlev -78 (32))
+<0003> gsm322.c:2919 Found signal (ARFCN 46 rxlev -65 (45))
+<0003> gsm322.c:2919 Found signal (ARFCN 47 rxlev -59 (51))
+<0003> gsm322.c:2919 Found signal (ARFCN 48 rxlev -76 (34))
+<0003> gsm322.c:2919 Found signal (ARFCN 49 rxlev -67 (43))
+<0003> gsm322.c:2919 Found signal (ARFCN 50 rxlev -71 (39))
+<0003> gsm322.c:2919 Found signal (ARFCN 51 rxlev -57 (53))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (53..57)
+send: 00 0c 08 00 00 00 01 00 00 00 00 35 00 39
+recv: 09 01 00 00 00 35 35 00 00 36 24 00 00 37 29 00 00 38 22 00 00 39 2e 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 53 rxlev -57 (53))
+<0003> gsm322.c:2919 Found signal (ARFCN 54 rxlev -74 (36))
+<0003> gsm322.c:2919 Found signal (ARFCN 55 rxlev -69 (41))
+<0003> gsm322.c:2919 Found signal (ARFCN 56 rxlev -76 (34))
+<0003> gsm322.c:2919 Found signal (ARFCN 57 rxlev -64 (46))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (60..60)
+send: 00 0c 08 00 00 00 01 00 00 00 00 3c 00 3c
+recv: 09 01 00 00 00 3c 1a 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 60 rxlev -84 (26))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (589(DCS)..589(DCS))
+send: 00 0c 08 00 00 00 01 00 00 00 02 4d 02 4d
+recv: 09 01 00 00 02 4d 1e 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 589(DCS) rxlev -80 (30))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (617(DCS)..618(DCS))
+send: 00 0c 08 00 00 00 01 00 00 00 02 69 02 6a
+recv: 09 01 00 00 02 69 1d 00 02 6a 1c 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 617(DCS) rxlev -81 (29))
+<0003> gsm322.c:2919 Found signal (ARFCN 618(DCS) rxlev -82 (28))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (620(DCS)..623(DCS))
+send: 00 0c 08 00 00 00 01 00 00 00 02 6c 02 6f
+recv: 09 01 00 00 02 6c 1f 00 02 6d 1c 00 02 6e 20 00 02 6f 1c 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 620(DCS) rxlev -79 (31))
+<0003> gsm322.c:2919 Found signal (ARFCN 621(DCS) rxlev -82 (28))
+<0003> gsm322.c:2919 Found signal (ARFCN 622(DCS) rxlev -78 (32))
+<0003> gsm322.c:2919 Found signal (ARFCN 623(DCS) rxlev -82 (28))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (625(DCS)..628(DCS))
+send: 00 0c 08 00 00 00 01 00 00 00 02 71 02 74
+recv: 09 01 00 00 02 71 15 00 02 72 1c 00 02 73 16 00 02 74 21 00
+L1CTL_PM_CONF
+<0003> gsm322.c:2919 Found signal (ARFCN 625(DCS) rxlev -89 (21))
+<0003> gsm322.c:2919 Found signal (ARFCN 626(DCS) rxlev -82 (28))
+<0003> gsm322.c:2919 Found signal (ARFCN 627(DCS) rxlev -88 (22))
+<0003> gsm322.c:2919 Found signal (ARFCN 628(DCS) rxlev -77 (33))
+<0003> gsm322.c:2933 Done with power scanning range.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2845 Found 24 frequencies.
+<0003> gsm322.c:2260 Scanning frequency 53 (rxlev -57).
+<0003> gsm322.c:479 Sync to ARFCN=53 rxlev=-57 (No sysinfo yet, ccch mode NONE)
+<0003> gsm322.c:2280 30 frequencies left in band 955..124
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 11 01 00 00 00 00 35 00 64 27 10 03 20 03 07 00 00 35
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+recv: 02 00 00 00 00 00 00 35 00 16 43 0e 00 10 00 00 17 5e 00 08
+L1CTL_FBSB_CONF
+<0003> gsm322.c:2958 Channel synched. (ARFCN=53, snr=16, BSIC=8)
+<0003> gsm322.c:703 Starting CS timer with 4 seconds.
+<0001> gsm322.c:2979 using DSC of 90
+recv: 03 00 00 00 80 00 00 35 00 16 43 42 35 00 00 00 55 06 19 00 00 00 00 00 00 00 00 08 10 00 00 00 00 00 00 f9 00 00 2b
+L1CTL_DATA_IND
+<0003> gsm48_rr.c:4822 Channel provides data.
+<0003> gsm322.c:703 Starting CS timer with 4 seconds.
+<0001> gsm48_rr.c:1788 New SYSTEM INFORMATION 1
+recv: 03 00 00 00 80 00 00 35 00 16 43 75 35 00 00 00 59 06 1a 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00 ff f9 00 00
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:1817 New SYSTEM INFORMATION 2
+recv: 03 00 00 00 80 00 00 35 00 16 43 a8 34 03 00 00 49 06 1b c9 bb 64 f0 00 73 d1 cc 00 14 57 a5 4f f9 00 00 b7 00 b0 47
+L1CTL_DATA_IND
+<0001> sysinfo.c:705 New SYSTEM INFORMATION 3 (mcc 460 mnc 00 lac 0x73d1)
+<0001> gsm48_rr.c:1909 Changing CCCH_MODE to 1
+send: 00 08 10 00 00 00 01 00 00 00
+recv: 11 00 00 00 01 00 00 00
+L1CTL_CCCH_MODE_CONF
+recv: 03 00 00 00 90 00 00 35 00 16 43 b6 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 bc 37 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 c0 36 00 00 00 25 06 21 00 05 f4 ed db 18 1c 23 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2147 PAGING ignored, we are not camping.
+recv: 03 00 00 00 90 00 00 35 00 16 43 c6 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 ca 37 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 d0 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 d4 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 80 00 00 35 00 16 43 db 36 00 00 00 31 06 1c 64 f0 00 73 d1 a5 4f f9 00 00 b7 00 b2 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:1942 New SYSTEM INFORMATION 4 (mcc 460 mnc 00 lac 0x73d1)
+recv: 03 00 00 00 90 00 00 35 00 16 43 df 34 00 00 00 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 e5 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 e9 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 ef 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 f3 37 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 f9 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 43 fd 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 03 34 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 07 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 80 00 00 35 00 16 44 0e 37 00 00 00 01 06 00 b0 04 18 60 6e 4a 93 aa 2a 32 94 25 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 12 35 00 00 00 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 18 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 1c 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 22 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 26 37 00 00 00 25 06 21 00 05 f4 ed db 18 1c 23 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2147 PAGING ignored, we are not camping.
+recv: 03 00 00 00 90 00 00 35 00 16 44 2c 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 30 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 36 36 00 00 00 25 06 21 00 05 f4 ec da 28 8b 23 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2147 PAGING ignored, we are not camping.
+recv: 03 00 00 00 90 00 00 35 00 16 44 3a 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 80 00 00 35 00 16 44 41 36 00 00 00 49 06 03 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:1875 New SYSTEM INFORMATION 2ter
+<0003> gsm322.c:2721 Received relevant sysinfo.
+<0003> gsm322.c:713 stopping pending CS timer.
+<0003> gsm322.c:2330 Scan frequency 53: Cell found. (rxlev -57 mcc 460 mnc 00 lac 73d1)
+<0003> gsm322.c:1841 Select using access class
+<0003> gsm322.c:384 A (RLA_C (-57) - RXLEV_ACC_MIN (-95)) = 38
+<0003> gsm322.c:386 B (MS_TXPWR_MAX_CCH (33) - p (33)) = 0
+<0003> gsm322.c:387 C1 (A - MAX(B,0)) = 38
+<0003> gsm322.c:1960 Cell ARFCN 53: Cell found, (rxlev=-57 mcc=460 mnc=00 lac=73d1  China, China Mobile)
+<0003> gsm322.c:1971 Cell ARFCN 53 selected.
+<0003> gsm322.c:2428 Tune to frequency 53.
+<0003> gsm322.c:473 Sync to ARFCN=53 rxlev=-57 (Sysinfo, ccch mode NON-COMB)
+<0003> gsm322.c:2455 Cell available.
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_CELL_FOUND' for Cell selection in state 'C2 stored cell selection'
+<000e> gsm322.c:3396 Camping normally on cell (ARFCN=53 mcc=460 mnc=00  China, China Mobile)
+<0003> gsm322.c:834 new state 'C2 stored cell selection' -> 'C3 camped normally'
+<0005> gsm48_mm.c:4308 (ms 1) Received 'MM_EVENT_CELL_SELECTED' event in state MM IDLE, PLMN search
+<0005> gsm48_mm.c:906 new MM IDLE state PLMN search -> location updating needed
+<0005> gsm48_mm.c:906 new MM IDLE state location updating needed -> attempting to update
+<0005> gsm48_mm.c:425 starting T3212 (periodic loc. upd. delay) with 7200 seconds
+<0005> gsm48_mm.c:2285 Do Loc. upd. for IMSI attach.
+<000e> gsm48_mm.c:2206 Perform location update (MCC 460, MNC 00 LAC 0x73d1)
+<0005> gsm48_mm.c:2340 LOCATION UPDATING REQUEST
+<0005> gsm48_mm.c:2362  using LAI (mcc 460 mnc 00 lac 0x73d1)
+<0005> gsm48_mm.c:2370  using TMSI 0x3cc3240c
+<0005> gsm48_mm.c:911 new state MM IDLE, attempting to update -> wait for RR connection (location updating)
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_EST_REQ' received in state idle (sapi 0)
+<000e> gsm48_rr.c:1299 Establish radio link due to mobility management request
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_LEAVE_IDLE' for Cell selection in state 'C3 camped normally'
+<0003> gsm322.c:834 new state 'C3 camped normally' -> 'connected mode 1'
+<0003> gsm322.c:3678 Going to camping (normal) ARFCN 53.
+<0003> gsm322.c:457 Sync to ARFCN=53, but there is a sync already pending
+<0001> gsm48_rr.c:359 new state idle -> connection pending
+<0001> gsm48_rr.c:1446 CHANNEL REQUEST: 00 (Location Update with NECI)
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 11 01 00 00 00 00 35 00 64 27 10 03 20 03 07 00 01 35
+recv: 03 00 00 00 90 00 00 35 00 16 44 45 36 00 00 00 05 06 07 06 80 04 c6 61 87 03 32 81 8c a6 93 2c 00 cb 48 1e f4 00 2b
+L1CTL_DATA_IND
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+recv: 02 00 00 00 00 00 00 35 00 16 44 7d 00 10 00 00 17 69 00 08
+L1CTL_FBSB_CONF
+<0003> gsm322.c:2958 Channel synched. (ARFCN=53, snr=16, BSIC=8)
+<0001> gsm322.c:2979 using DSC of 90
+recv: 03 00 00 00 90 00 00 35 00 16 44 82 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0003> gsm48_rr.c:4822 Channel provides data.
+<0001> gsm48_rr.c:1585 RANDOM ACCESS (requests left 8)
+<0001> gsm48_rr.c:1642 RANDOM ACCESS (Tx-integer 32 combined no S(lots) 0 ra 0x02)
+当前设置的random为:1568651368,slots:8
+当前设置的ncch->data[2]是:0
+<0001> gsm48_rr.c:1679 Use MS-TXPWR-MAX-CCH power value 5 (33 dBm)
+send: 00 0c 13 00 00 00 00 00 00 00 00 05 00 00
+send: 00 0c 04 00 00 00 00 00 00 00 02 00 00 08
+recv: 03 00 00 00 90 00 00 35 00 16 44 88 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 8c 35 00 00 00 25 06 21 00 05 f4 ed db 18 1c 23 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2147 PAGING ignored, we are not camping.
+recv: 03 00 00 00 90 00 00 35 00 16 44 92 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 0c 00 00 00 00 00 00 35 00 16 44 98 00 00 00 00
+L1CTL_RACH_CONF
+<0001> gsm48_rr.c:1585 RANDOM ACCESS (requests left 7)
+<0001> gsm48_rr.c:1642 RANDOM ACCESS (Tx-integer 32 combined no S(lots) 217 ra 0x02)
+当前设置的random为:2100853050,slots:243
+当前设置的ncch->data[2]是:0
+<0001> gsm48_rr.c:1679 Use MS-TXPWR-MAX-CCH power value 5 (33 dBm)
+send: 00 0c 13 00 00 00 00 00 00 00 00 05 00 00
+send: 00 0c 04 00 00 00 00 00 00 00 02 00 00 f3
+recv: 03 00 00 00 90 00 00 35 00 16 44 96 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 9c 34 00 00 00 25 06 21 00 05 f4 ec da 28 8b 23 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2147 PAGING ignored, we are not camping.
+recv: 03 00 00 00 90 00 00 35 00 16 44 a0 35 df 00 00 2d 06 3f 00 49 00 35 02 64 d8 01 00 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2427 IMMEDIATE ASSIGNMENT:
+<0001> gsm48_rr.c:2450  (ta 1/553m ra 0x02 chan_nr 0x49 ARFCN 53 TS 1 SS 1 TSC 0)
+<0001> gsm48_rr.c:2363 request 02 matches (fn=12,24,38)
+<0001> gsm48_rr.c:2475 resetting scheduler
+<0001> gsm48_rr.c:3215 sending establish message
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+<0001> gsm48_rr.c:2952 setting indicated TA 1 (actual TA 1)
+<0001> gsm48_rr.c:2967 using last BCCH timeout 32
+<0001> gsm48_rr.c:824 stopping pending timer T_meas
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=1 rxlev-full=-110 rxlev-sub=-110 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 00 40 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+<0001> gsm48_rr.c:2985 establishing channel in dedicated mode
+<0001> gsm48_rr.c:2989  Channel type 64, subch 1, ts 1, mode 0, audio-mode 5, cipher 1
+send: 00 08 0d 00 00 00 02 00 00 00
+send: 00 0c 13 00 00 00 00 00 00 00 01 05 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 00 40 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 90 05 00 00 00 49 00 00 00 00 00 00 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05
+send: 00 1f 06 00 03 04 49 00 02 00 01 3f 3d 05 08 02 64 f0 00 73 d1 33 05 f4 3c c3 24 0c 2b 2b 2b 2b 2b
+recv: 0e 00 00 00 02 00 00 00
+L1CTL_RESET_CONF
+recv: 03 00 00 00 80 00 00 35 00 16 44 a7 35 00 00 00 31 06 1c 64 f0 00 73 d1 a5 4f f9 00 00 b7 00 b2 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 44 ab 37 bf 00 00 2d 06 3f 00 49 00 35 02 64 d8 01 00 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2427 IMMEDIATE ASSIGNMENT:
+<0001> gsm48_rr.c:2450  (ta 1/553m ra 0x02 chan_nr 0x49 ARFCN 53 TS 1 SS 1 TSC 0)
+<0001> gsm48_rr.c:2460 Ignoring, channel already assigned.
+recv: 03 00 00 00 91 00 00 35 00 16 44 b1 32 3e 48 02 45 73 01 68 2e 9d f2 82 48 7b f4 12 1a ab dd 43 ec f1 52 27 39 e0 51
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 72 bit errors
+recv: 0f 00 00 00 00 00 00 00 00 16 44 b8 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 44 dc 36 00 00 00 01 73 3d 05 08 02 64 f0 00 73 d1 33 05 f4 3c c3 24 0c 2b 4a ac 37 3d
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:359 new state connection pending -> dedicated
+<0001> gsm48_rr.c:1242 CLASSMARK CHANGE
+a
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_EST_CNF' from RR in state wait for RR connection (location updating) (sapi 0)
+<0005> gsm48_mm.c:403 starting T3210 (loc. upd. timeout) with 20.0 seconds
+<0005> gsm48_mm.c:921 new state wait for RR connection (location updating) -> location updating initiated
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr=63 ber= 18 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 44 eb 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 01 00 35 06 16 03 33 19 81 20 05 60 14 c0 00 00 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 44 fc 38 00 00 00 05 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 45 0b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 45 0f 34 00 00 00 03 00 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:489 stopping pending (periodic loc. upd. delay) timer T3212
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 1)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+recv: 0f 00 00 00 00 00 00 00 00 16 45 1e 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 03 21 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 45 42 35 00 00 00 03 03 01 2b 42 f7 71 86 a4 62 fb 69 83 6e e1 ec 48 4d f6 b5 86 f7 22
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 45 51 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 45 62 35 db 00 00 05 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 45 71 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 45 75 35 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 45 84 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 45 a8 36 00 00 00 03 03 01 2b ce ba d4 73 1f 65 c8 2b 16 9f 4e e8 34 4e 97 74 6e a7 6c
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 45 b7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 45 c8 34 00 00 00 05 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 45 d7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 45 db 36 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 45 ea 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 0e 37 00 00 00 03 03 01 2b c1 99 90 6a ec 2f 0d dc 05 99 c3 2a d1 df 1c 58 09 fa 86
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 46 1d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 2e 36 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 46 3d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 41 34 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 46 50 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 46 74 36 00 00 00 03 03 01 2b 5a e9 fb 0e c3 44 51 f3 7c 45 e1 f3 08 45 c6 b3 12 f5 cd
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 46 83 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 94 36 f8 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 46 a3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 a7 34 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 46 b6 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 da 34 00 00 00 03 03 01 2b a4 12 fb 4d 83 75 a1 e7 38 4a 92 b7 2d b6 9d b6 e9 b6 ce
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 46 e9 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 46 fa 35 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 47 09 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 0d 35 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 47 1c 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 47 40 37 00 00 00 03 03 01 2b d8 25 9a 9b 2b 2b 5f 5f 78 38 22 92 99 ad aa fd bf 01 b0
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 47 4f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 60 35 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 47 6f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 73 35 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 47 82 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 a6 37 ac 00 00 03 03 01 2b 1a b0 0b 34 07 57 42 be b1 b0 74 74 27 67 5a aa bb 3f 33
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 47 b5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 c6 37 2a 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 47 d5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 47 d9 37 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 47 e8 00 00 00 00
+L1CTL_DATA_CONF
+send: 00 1f 06 00 00 00 49 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 49 00 00 35 00 16 48 0c 35 00 00 00 03 03 01 2b c4 00 53 40 3d f0 11 84 0c 63 45 e9 f3 0e c5 c4 53 13 7d
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 48 1b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 2c 35 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 48 3b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 3f 35 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 48 4e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 72 38 00 00 00 03 03 01 2b 26 ac 1a fd cb 01 97 40 6e b0 2c 74 1d e7 49 8a b6 e7 36
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 48 81 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 92 36 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 48 a1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 a5 36 00 00 00 03 10 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 49 00 00 00 03 39 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 48 b4 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 d8 36 00 00 00 01 21 01 2b 9c 58 69 fa ae c3 3c 51 d1 fc 5c 41 f9 f0 42 c4 31 93 a0
+L1CTL_DATA_IND
+send: 00 1f 06 00 00 00 49 00 00 00 01 22 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 48 e7 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 48 f8 33 b3 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 49 07 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 0b 35 00 00 00 03 30 0d 05 18 01 2b a3 5b 39 fb 52 c3 7d 91 e1 ac 48 7d f6 a1 86 f8
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=0, V(R)=1 (state LAPD_STATE_MF_EST)
+recv: 0f 00 00 00 00 00 00 00 00 16 49 1a 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 3e 35 00 00 00 03 22 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 2)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+send: 00 1f 06 00 00 00 49 00 00 00 03 41 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 49 4d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 5e 35 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+<0001> gsm48_rr.c:666 MON: f=53 lev=-56 snr=25 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-56 rxlev-sub=-56 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 36 36 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 36 36 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 49 6d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 71 36 00 00 00 03 22 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 49 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 49 80 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 a4 35 00 00 00 03 22 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 49 00 00 00 01 52 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 49 b3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 c4 34 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 49 d3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 49 d7 35 00 00 00 03 22 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+send: 00 1f 06 00 00 00 49 00 00 00 03 49 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 49 e6 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a 0a 34 00 00 00 03 22 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+recv: 0f 00 00 00 00 00 00 00 00 16 4a 19 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a 2a 34 00 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4a 39 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a 3d 34 00 00 00 01 41 01 2b b8 09 b2 86 f5 a2 c7 39 92 92 ed ad 8d bd a5 b1 bb 34 36
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr= 0 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 4a 4c 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a 70 34 00 00 00 03 52 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_TIMER_RECOV)
+send: 00 1f 06 00 00 00 49 00 00 00 03 59 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4a 7f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a 90 35 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4a 9f 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a a3 35 00 00 00 03 03 01 2b 57 33 7e 95 e0 6f 08 2c 06 9d c2 e9 91 8e ec 64 4d eb 75
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4a b2 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a d6 35 00 00 00 01 59 01 2b 5f 2b 78 1f 62 88 29 a6 9e fa e8 43 0e b1 c4 74 53 67 7d
+L1CTL_DATA_IND
+send: 00 1f 06 00 00 00 49 00 00 00 01 44 2d 05 19 08 8a 36 47 01 74 46 62 92 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4a e5 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4a f6 35 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4b 05 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b 09 37 00 00 00 03 52 0d 05 18 02 2b e4 35 8b 57 27 7e 9a a0 6b 38 2f 52 9c 3d a9 d1
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=1, V(R)=2 (state LAPD_STATE_MF_EST)
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr= 0 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 4b 18 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b 3c 35 00 00 00 03 44 0d 05 18 01 2b 17 7d ce a1 94 78 6f 62 ac 29 bd de f1 98 44 6a
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 1)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+send: 00 1f 06 00 00 00 49 00 00 00 03 61 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4b 4b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b 5c 36 00 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4b 6b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b 6f 34 00 00 00 01 61 01 2b 5d d6 b9 9e f2 e8 45 8e b3 24 75 db 67 1b 6a 8b 6f 27 08
+L1CTL_DATA_IND
+send: 00 1f 06 00 00 00 49 00 00 00 01 66 2d 05 59 08 49 06 00 47 56 64 81 64 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4b 7e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b a2 33 78 00 00 03 74 0d 05 18 01 2b 17 7d ce a1 94 78 6f 62 ac 29 bd de f1 98 44 6a
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=2, V(R)=3 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 49 00 00 00 03 79 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4b b1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b c2 36 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4b d1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4b d5 35 00 00 00 01 81 01 2b cb 6f 17 6c 0e ad c4 7d 93 61 ad e8 7d 8e a1 a4 78 7b 0b
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4b e4 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr=20 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 49 00 00 35 00 16 4c 08 35 00 00 00 03 03 01 2b 09 b9 c6 f2 d2 c5 9d 93 29 ad de fd 98 41 aa b0 7f 34 20
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4c 17 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4c 28 33 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4c 37 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4c 3b 34 00 00 00 03 86 4d 05 12 00 bc 19 e2 a8 d3 27 ae 15 78 32 8e ad c3 32 bb a7 2b
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_AUTH_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1644 AUTHENTICATION REQUEST (seq 0)
+<0005> subscriber.c:960 Generating KEY at SIM
+<000f> sim.c:228 got new job: SIM_JOB_RUN_GSM_ALGO (handle=00000006)
+<000f> sim.c:716 go MF
+<000f> sim.c:260 SELECT (file=0x3f00)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 1f 06 00 00 00 49 00 00 00 03 81 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 3f 00
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 0f 00 00 00 00 00 00 00 00 16 4c 4a 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 c0 00 00 00 00 3f 00 01 00 00 00 00 00 0a 93 04 08 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:725 requested path is longer, go child DFgsm
+<000f> sim.c:260 SELECT (file=0x7f20)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 7f 20
+recv: 17 00 00 00 9f 17
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x17)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=23)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 17
+recv: 03 00 00 00 49 00 00 35 00 16 4c 6e 37 0d 00 00 03 03 01 2b e7 75 8a a7 27 3a 9a 93 2b 2d df 5d 98 39 aa 92 ff 2d 80
+L1CTL_DATA_IND
+recv: 17 00 00 c0 00 00 00 00 7f 20 02 00 00 00 00 00 0a 93 00 1c 04 00 83 8a 83 8a 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=23 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:557 RUN GSM ALGORITHM
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0x88)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 19 16 00 00 00 a0 88 00 00 10 bc 19 e2 a8 d3 27 ae 15 78 32 8e ad c3 32 bb a7
+recv: 0f 00 00 00 00 00 00 00 00 16 4c 7d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 00 9f 0c
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0c)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=12)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0c
+recv: 17 00 00 c0 41 0f 11 01 ed 7e cc 1b 4a db 39 b0 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=12 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0005> subscriber.c:1011 Updating KC on SIM
+<0005> gsm48_mm.c:4312 (ms 1) Received 'MM_EVENT_AUTH_RESPONSE' event in state location updating initiated
+<0005> gsm48_mm.c:1668 AUTHENTICATION RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+<000f> sim.c:228 got new job: SIM_JOB_UPDATE_BINARY (handle=00000005)
+<000f> sim.c:260 SELECT (file=0x6f20)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 1f 06 00 00 00 49 00 00 00 01 88 19 05 14 41 0f 11 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 20
+recv: 03 00 00 00 49 00 00 35 00 16 4c 8e 35 90 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 0f 00 00 00 00 00 00 00 00 16 4c 9d 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4c a1 37 00 00 00 03 03 01 2b 20 14 18 0f 4a 84 37 23 56 99 fe ea c0 4f 10 34 0c 17 45
+L1CTL_DATA_IND
+recv: 17 00 00 c0 00 00 00 09 6f 20 04 00 11 f0 aa 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 9)
+<000f> sim.c:313 UPDATE BINARY (offset=0 len=9)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xd6)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 12 16 00 00 00 a0 d6 00 00 09 ed 7e cc 1b 4a db 39 b0 00
+recv: 0f 00 00 00 00 00 00 00 00 16 4c b0 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr=26 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 49 00 00 35 00 16 4c d4 35 00 00 00 03 a8 0d 05 18 03 2b f6 da c6 db 12 db 4d 9b 75 ab 67 3f 6a 90 2f 2c
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_ID_REQ' in MM state location updating initiated
+<0005> gsm48_mm.c:1748 IDENTITY REQUEST (mi_type 3)
+<0005> gsm48_mm.c:1774 IDENTITY RESPONSE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 1 (pdisc 5)
+send: 00 1f 06 00 00 00 49 00 00 00 03 a1 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 49 00 00 00 01 aa 31 05 59 09 83 36 47 01 74 46 62 92 f0 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4c e3 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4c f4 34 00 00 00 07 01 03 03 2d 06 1e c9 bb 64 f0 00 73 d1 d7 ff 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4d 03 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4d 07 36 00 00 00 03 03 01 2b cc 58 55 fa bf 03 30 01 d4 00 5f 40 38 30 12 94 0d af 45
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4d 16 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4d 3a 36 00 00 00 01 c1 01 2b 5f 1f 78 08 22 86 99 a2 ea f9 8f 02 e4 01 8b 40 67 70 76
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4d 49 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4d 5a 39 00 00 00 07 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4d 69 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4d 6d 35 00 00 00 03 03 01 2b e6 e5 8a cb 27 17 5a 8e bb 24 73 5b 65 fb 6b 03 6f 41 ec
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4d 7c 00 00 00 00
+L1CTL_DATA_CONF
+^C
+Signal 2 received.
+Performing shutdown with clean detach, if possible...
+<0005> gsm48_mm.c:4312 (ms 1) Received 'MM_EVENT_IMSI_DETACH' event in state location updating initiated
+<0005> gsm48_mm.c:1976 IMSI detach delayed.
+recv: 03 00 00 00 49 00 00 35 00 16 4d a0 35 00 00 00 03 ca 39 05 02 64 f0 00 73 d1 17 05 f4 86 c3 de b4 2b 57 28 3e 9e 90
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state location updating initiated (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_LOC_UPD_ACCEPT' in MM state location updating initiated
+<0005> gsm48_mm.c:471 stopping pending (loc. upd. timeout) timer T3210
+<0005> subscriber.c:1076 (ms 1) new state U1_UPDATED -> U1_UPDATED
+<0005> subscriber.c:851 Updating LOCI on SIM
+<000e> gsm48_mm.c:2453 Location update accepted
+<0005> gsm48_mm.c:2456 LOCATION UPDATING ACCEPT (mcc 460 mnc 00 lac 0x73d1)
+<0005> gsm48_mm.c:2479 got TMSI 0x86c3deb4 (2260983476)
+<0005> subscriber.c:851 Updating LOCI on SIM
+<0005> gsm48_mm.c:1556 TMSI REALLOCATION COMPLETE
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_DATA_REQ' received in state dedicated (sapi 0)
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+<0005> gsm48_mm.c:2511 follow-on proceed not supported.
+<0005> gsm48_mm.c:461 starting T3240 (RR release timeout) with 10.0 seconds
+<0005> gsm48_mm.c:921 new state location updating initiated -> wait for network command
+<0002> gsm322.c:3831 (ms 1) Event 'EVENT_REG_SUCCESS' for automatic PLMN selection in state 'A1 trying RPLMN'
+<0002> gsm322.c:811 new state 'A1 trying RPLMN' -> 'A2 on PLMN'
+<000f> sim.c:228 got new job: SIM_JOB_UPDATE_BINARY (handle=00000005)
+<000f> sim.c:260 SELECT (file=0x6f7e)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 1f 06 00 00 00 49 00 00 00 03 c1 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 49 00 00 00 01 cc 09 05 1b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 7e
+<0001> gsm48_rr.c:666 MON: f=53 lev=-56 snr= 0 ber=  0 LAI=460 00 73d1 ID=c9bb TA=1 pwr=5 TS=1/1
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-56 rxlev-sub=-56 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 36 36 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 36 36 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 0f 00 00 00 00 00 00 00 00 16 4d af 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 c0 00 00 00 0b 6f 7e 04 00 11 f0 1a 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 11)
+<000f> sim.c:313 UPDATE BINARY (offset=0 len=11)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xd6)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 14 16 00 00 00 a0 d6 00 00 0b 3c c3 24 0c 64 f0 00 73 d1 ff 00
+recv: 03 00 00 00 49 00 00 35 00 16 4d c0 35 7d 00 00 07 01 03 03 49 06 06 ef 26 80 00 00 0d ef 00 00 00 00 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 17 00 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+<000f> sim.c:228 got new job: SIM_JOB_UPDATE_BINARY (handle=00000005)
+<000f> sim.c:260 SELECT (file=0x6f7e)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xa4)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 0b 16 00 00 00 a0 a4 00 00 02 6f 7e
+recv: 0f 00 00 00 00 00 00 00 00 16 4d cf 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4d d3 36 00 00 00 03 cc 35 05 32 47 12 01 12 22 53 05 23 49 01 00 2b a1 e4 78 4b 62 b7
+L1CTL_DATA_IND
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_DATA_IND' from RR in state wait for network command (sapi 0)
+<0005> gsm48_mm.c:4088 (ms 1) Received 'MT_MM_INFO' in MM state wait for network command
+<0005> gsm48_mm.c:525 stopping pending (RR release timeout) timer T3240
+<0005> gsm48_mm.c:461 starting T3240 (RR release timeout) with 10.0 seconds
+send: 00 1f 06 00 00 00 49 00 00 00 03 e1 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 17 00 00 00 9f 0f
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x9f sw2=0x0f)
+<000f> sim.c:980 command successful
+<000f> sim.c:590 GET RESPONSE (len=15)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xc0)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 09 16 00 00 00 a0 c0 00 00 0f
+recv: 0f 00 00 00 00 00 00 00 00 16 4d e2 00 00 00 00
+L1CTL_DATA_CONF
+recv: 17 00 00 c0 00 00 00 0b 6f 7e 04 00 11 f0 1a 01 02 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=15 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:1096 selected file (len 11)
+<000f> sim.c:313 UPDATE BINARY (offset=0 len=11)
+<000f> sim.c:186 sending APDU (class 0xa0, ins 0xd6)
+<000f> sim.c:204 Using built-in SIM reader
+send: 00 14 16 00 00 00 a0 d6 00 00 0b 86 c3 de b4 64 f0 00 73 d1 ff 00
+recv: 17 00 00 00 90 00
+L1CTL_SIM_CONF
+<000f> sim.c:906 received APDU (len=0 sw1=0x90 sw2=0x00)
+<000f> sim.c:980 command successful
+<000f> sim.c:152 sending result to callback function (type=0)
+recv: 03 00 00 00 49 00 00 35 00 16 4e 06 34 00 00 00 01 e1 01 2b 0a ba 87 33 22 95 d9 af 1a fc 0b 01 c7 40 52 b0 3d b4 5d
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4e 15 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4e 26 32 53 4b 02 e5 fd 10 a1 94 f0 67 aa bf c3 0a 5b 1a 1c 4e 43 6c 7d 1d ca 39 04 99
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 75 bit errors
+recv: 0f 00 00 00 00 00 00 00 00 16 4e 35 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4e 39 36 00 00 00 03 fc 35 05 32 47 12 01 12 22 53 05 23 49 01 00 2b a1 e4 78 4b 62 b7
+L1CTL_DATA_IND
+<0015> lapd_core.c:1571 (dl=0x27898c8) N(S) sequence error: N(S)=6, V(R)=7 (state LAPD_STATE_MF_EST)
+send: 00 1f 06 00 00 00 49 00 00 00 03 f9 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4e 48 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4e 6c 35 00 00 00 03 ee 0d 06 0d 00 2b f7 0a c6 87 12 e2 8d 89 a5 a6 fb 3a c3 53 11 fd
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:3385 channel release request with cause 0x00
+<0001> gsm48_rr.c:359 new state dedicated -> release pending
+<0001> gsm48_rr.c:797 starting T3110 with 1.500 seconds
+send: 00 1f 06 00 00 00 49 00 00 00 03 01 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 49 00 07 01 01 53 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4e 7b 00 00 00 00
+L1CTL_DATA_CONF
+<0001> gsm48_rr.c:666 MON: f=53 lev=-57 snr=35 ber= 13 LAI=460 00 73d1 ID=c9bb
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-57 rxlev-sub=-57 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 49 49 40 18 01 05 01 01 03 49 06 15 35 35 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 03 00 00 00 49 00 00 35 00 16 4e 8c 30 51 55 02 b5 16 08 68 9b 30 60 aa 77 b5 66 b8 a9 0e 13 36 bc 0c 93 d6 1c db b8
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 85 bit errors
+recv: 0f 00 00 00 00 00 00 00 00 16 4e 9b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4e 9f 37 00 00 00 03 03 01 2b f9 90 42 ec 31 8d d4 65 9f 6b 28 2f 5e 9c 38 69 d2 ae dd
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4e ae 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 49 00 00 35 00 16 4e d2 35 00 00 00 01 73 01 2b 43 07 71 c2 a4 51 bb 7c 73 61 e5 e8 4b 0e b7 44 76 b3 66
+L1CTL_DATA_IND
+<000e> gsm48_rr.c:4951 Requested channel aborted
+<0001> gsm48_rr.c:848 stopping pending timer T3110
+<0001> gsm48_rr.c:359 new state release pending -> idle
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_RET_IDLE' for Cell selection in state 'connected mode 1'
+<0003> gsm322.c:3590 Selecting ARFCN 53. after LOC.UPD.
+<0003> gsm322.c:473 Sync to ARFCN=53 rxlev=-57 (Sysinfo, ccch mode NON-COMB)
+<0003> gsm322.c:834 new state 'connected mode 1' -> 'C3 camped normally'
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_REL_IND' from RR in state wait for network command (sapi 0)
+<0005> gsm48_mm.c:525 stopping pending (RR release timeout) timer T3240
+<0005> gsm48_mm.c:1128 We are in registered LAI as returning to MM IDLE
+<0005> gsm48_mm.c:916 new state wait for network command -> MM IDLE, normal service
+<0005> gsm48_mm.c:425 starting T3212 (periodic loc. upd. delay) with 7200 seconds
+<0005> gsm48_mm.c:4308 (ms 1) Received 'MM_EVENT_CELL_SELECTED' event in state MM IDLE, normal service
+<0005> gsm48_mm.c:2254 Loc. upd. not required.
+<0005> gsm48_mm.c:906 new MM IDLE state normal service -> normal service
+<0005> gsm48_mm.c:4308 (ms 1) Received 'MM_EVENT_IMSI_DETACH' event in state MM IDLE, normal service
+<0005> gsm48_mm.c:1908 IMSI detach started (MM IDLE)
+<0005> gsm48_mm.c:911 new state MM IDLE, normal service -> wait for RR connection (IMSI detach)
+<0005> gsm48_mm.c:1807 IMSI DETACH INDICATION
+<0005> gsm48_mm.c:1828  using TMSI 0x86c3deb4
+<0001> gsm48_rr.c:5451 (ms 1) Message 'RR_EST_REQ' received in state idle (sapi 0)
+<000e> gsm48_rr.c:1299 Establish radio link due to mobility management request
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_LEAVE_IDLE' for Cell selection in state 'C3 camped normally'
+<0003> gsm322.c:834 new state 'C3 camped normally' -> 'connected mode 1'
+<0003> gsm322.c:3678 Going to camping (normal) ARFCN 53.
+<0003> gsm322.c:457 Sync to ARFCN=53, but there is a sync already pending
+<0001> gsm48_rr.c:359 new state idle -> connection pending
+<0001> gsm48_rr.c:1459 CHANNEL REQUEST: 10 (OTHER with NECI)
+<0002> gsm322.c:3831 (ms 1) Event 'EVENT_REG_SUCCESS' for automatic PLMN selection in state 'A2 on PLMN'
+<0002> gsm322.c:3838 Event unhandled at this state.
+send: 00 08 12 00 00 00 00 00 00 00
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 11 01 00 00 00 00 35 00 64 27 10 03 20 03 07 00 01 35
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+recv: 02 00 00 00 00 00 00 35 00 16 4f 0c 00 0e 00 00 09 8e 00 08
+L1CTL_FBSB_CONF
+<0003> gsm322.c:2958 Channel synched. (ARFCN=53, snr=14, BSIC=8)
+<0001> gsm322.c:2979 using DSC of 90
+recv: 03 00 00 00 90 00 00 35 00 16 4f 11 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0003> gsm48_rr.c:4822 Channel provides data.
+<0001> gsm48_rr.c:1585 RANDOM ACCESS (requests left 8)
+<0001> gsm48_rr.c:1642 RANDOM ACCESS (Tx-integer 32 combined no S(lots) 0 ra 0x12)
+当前设置的random为:1569911953,slots:17
+当前设置的ncch->data[2]是:0
+<0001> gsm48_rr.c:1679 Use MS-TXPWR-MAX-CCH power value 5 (33 dBm)
+send: 00 0c 13 00 00 00 00 00 00 00 00 05 00 00
+send: 00 0c 04 00 00 00 00 00 00 00 12 00 00 11
+recv: 03 00 00 00 90 00 00 35 00 16 4f 17 34 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 4f 1b 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 4f 21 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 4f 25 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 4f 2b 35 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 0c 00 00 00 00 00 00 35 00 16 4f 2e 00 00 00 00
+L1CTL_RACH_CONF
+<0001> gsm48_rr.c:1585 RANDOM ACCESS (requests left 7)
+<0001> gsm48_rr.c:1642 RANDOM ACCESS (Tx-integer 32 combined no S(lots) 217 ra 0x14)
+当前设置的random为:1531920693,slots:238
+当前设置的ncch->data[2]是:0
+<0001> gsm48_rr.c:1679 Use MS-TXPWR-MAX-CCH power value 5 (33 dBm)
+send: 00 0c 13 00 00 00 00 00 00 00 00 05 00 00
+send: 00 0c 04 00 00 00 00 00 00 00 14 00 00 ee
+recv: 03 00 00 00 90 00 00 35 00 16 4f 2f 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 80 00 00 35 00 16 4f 36 36 00 00 00 01 06 00 b0 04 18 60 6e 4a 93 aa 2a 32 94 25 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 90 00 00 35 00 16 4f 3a 36 00 00 00 2d 06 3f 00 51 00 35 12 75 a4 01 00 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2427 IMMEDIATE ASSIGNMENT:
+<0001> gsm48_rr.c:2450  (ta 1/553m ra 0x12 chan_nr 0x51 ARFCN 53 TS 1 SS 2 TSC 0)
+<0001> gsm48_rr.c:2363 request 12 matches (fn=14,4,45)
+<0001> gsm48_rr.c:2475 resetting scheduler
+<0001> gsm48_rr.c:3215 sending establish message
+<0001> gsm48_rr.c:231 Using and incrementing V(SD) = 0 (pdisc 5)
+<0001> gsm48_rr.c:2952 setting indicated TA 1 (actual TA 1)
+<0001> gsm48_rr.c:2967 using last BCCH timeout 32
+<0001> gsm48_rr.c:824 stopping pending timer T_meas
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=1 rxlev-full=-110 rxlev-sub=-110 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 00 40 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+<0001> gsm48_rr.c:2985 establishing channel in dedicated mode
+<0001> gsm48_rr.c:2989  Channel type 64, subch 2, ts 1, mode 0, audio-mode 5, cipher 1
+send: 00 08 0d 00 00 00 02 00 00 00
+send: 00 0c 13 00 00 00 00 00 00 00 01 05 00 00
+send: 00 1f 06 0a 01 51 51 40 18 01 05 01 01 03 49 06 15 00 40 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 90 05 00 00 00 51 00 00 00 00 00 00 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05
+send: 00 1f 06 00 03 04 51 00 02 00 01 3f 25 05 01 33 05 f4 86 c3 de b4 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 03 00 00 00 90 00 00 35 00 16 4f 40 34 00 00 00 2d 06 3f 00 51 00 35 12 75 a4 01 00 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2427 IMMEDIATE ASSIGNMENT:
+<0001> gsm48_rr.c:2450  (ta 1/553m ra 0x12 chan_nr 0x51 ARFCN 53 TS 1 SS 2 TSC 0)
+<0001> gsm48_rr.c:2460 Ignoring, channel already assigned.
+recv: 0e 00 00 00 02 00 00 00
+L1CTL_RESET_CONF
+recv: 03 00 00 00 90 00 00 35 00 16 4f 44 34 00 00 00 2d 06 3f 00 51 00 35 12 75 a4 01 00 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:2427 IMMEDIATE ASSIGNMENT:
+<0001> gsm48_rr.c:2450  (ta 1/553m ra 0x12 chan_nr 0x51 ARFCN 53 TS 1 SS 2 TSC 0)
+<0001> gsm48_rr.c:2460 Ignoring, channel already assigned.
+recv: 03 00 00 00 91 00 00 35 00 16 4f 4a 36 00 00 00 15 06 21 00 01 f0 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+L1CTL_DATA_IND
+recv: 03 00 00 00 91 00 00 35 00 16 4f 4e 31 39 4a 02 25 55 f4 f0 0a d4 45 38 6b 32 5f 6e 27 77 77 0d e2 b9 1c c7 39 04 d2
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 74 bit errors
+recv: 03 00 00 00 51 00 00 35 00 16 4f 5c 36 00 00 00 05 01 03 03 49 06 1d 00 00 00 00 00 00 00 00 01 f7 f0 00 00 00 00 00
+L1CTL_DATA_IND
+<0015> lapdm.c:759 Received frame for unsupported SAPI 1!
+recv: 0f 00 00 00 00 00 00 00 00 16 4f 6b 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 4f 6f 36 3c 00 00 03 03 01 2b ac 24 d1 a7 6b 55 30 e5 8f 1e 97 4f c7 8e 90 b7 8b 23 8e
+L1CTL_DATA_IND
+recv: 0f 00 00 00 00 00 00 00 00 16 4f 7e 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 4f a2 35 00 00 00 01 73 25 05 01 33 05 f4 86 c3 de b4 2b 84 0d a3 45 b9 f3 32 c5 d5 93
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:359 new state connection pending -> dedicated
+<0001> gsm48_rr.c:1242 CLASSMARK CHANGE
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_EST_CNF' from RR in state wait for RR connection (IMSI detach) (sapi 0)
+<0005> gsm48_mm.c:443 starting T3220 (IMSI detach keepalive) with 5.0 seconds
+<0005> gsm48_mm.c:1924 IMSI detach started (Wait for RR release)
+<0005> gsm48_mm.c:921 new state wait for RR connection (IMSI detach) -> IMSI detach initiated
+send: 00 1f 06 00 00 00 51 00 00 00 01 00 35 06 16 03 33 19 81 20 05 60 14 c0 00 00 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4f b1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 4f c2 30 4f 4e 02 25 a7 45 9a ed 1c 9f 3b 23 60 50 e6 8b 3f 77 bd 24 28 70 51 b6 a8 34
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 78 bit errors
+recv: 0f 00 00 00 00 00 00 00 00 16 4f d1 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 4f d5 36 00 00 00 03 20 0d 06 0d 00 2b 8c 32 e5 d5 8b 1f 27 48 1a b6 8b 36 e7 56 ca be
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:3385 channel release request with cause 0x00
+<0001> gsm48_rr.c:359 new state dedicated -> release pending
+<0001> gsm48_rr.c:797 starting T3110 with 1.500 seconds
+send: 00 1f 06 00 00 00 51 00 00 00 03 21 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+send: 00 1f 06 00 00 00 51 00 07 01 01 53 01 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
+recv: 0f 00 00 00 00 00 00 00 00 16 4f e4 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 50 08 35 00 00 00 03 03 01 2b 3d bd d1 b1 9c 74 69 e7 6e ca ac 57 3d fe 91 80 6c 60 2d
+L1CTL_DATA_IND
+<0001> gsm48_rr.c:666 MON: f=53 lev=-58 snr=20 ber= 15 LAI=460 00 73d1 ID=c9bb
+<0001> gsm48_rr.c:2853 MEAS REP: pwr=5 TA=1 meas-invalid=0 rxlev-full=-58 rxlev-sub=-58 rxqual-full=0 rxqual-sub=0 dtx 0 ba 0 no-ncell-n 7
+length:18,ta:1,tx_power:5,(link_id & 0x40):64
+hehehe:0
+CORE调试:05 01 01 03 49 06 15 34 34 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+send: 00 1f 06 0a 01 51 51 40 18 01 05 01 01 03 49 06 15 34 34 01 c0 00 00 00 00 00 00 00 00 00 00 00 00
+recv: 0f 00 00 00 00 00 00 00 00 16 50 17 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 50 28 30 2e 4a 02 25 55 f4 c2 0a d4 45 38 23 20 16 14 27 77 77 0d b2 14 26 c7 39 04 d2
+L1CTL_DATA_IND
+<000c> l1ctl.c:301 Dropping frame with 74 bit errors
+recv: 0f 00 00 00 00 00 00 00 00 16 50 37 00 00 00 00
+L1CTL_DATA_CONF
+recv: 03 00 00 00 51 00 00 35 00 16 50 3b 37 52 00 00 01 73 01 2b 66 fb 6a c3 6f 11 ec 0c 4d c5 f5 93 07 2d c2 9d 91 a9 ac
+L1CTL_DATA_IND
+<000e> gsm48_rr.c:4951 Requested channel aborted
+<0001> gsm48_rr.c:848 stopping pending timer T3110
+<0001> gsm48_rr.c:359 new state release pending -> idle
+<0003> gsm322.c:4062 (ms 1) Event 'EVENT_RET_IDLE' for Cell selection in state 'connected mode 1'
+<0003> gsm322.c:834 new state 'connected mode 1' -> 'C5 choose cell'
+<0003> gsm322.c:3523 No BA range(s), try sysinfo.
+<0003> gsm322.c:3528 No BA on sysinfo, try stored BA list.
+<0003> gsm322.c:509 Unselecting serving cell.
+<0003> gsm322.c:2802 Scanning power for stored BA list.
+<0003> gsm322.c:2870 Scanning frequencies. (45..51)
+<0005> gsm48_mm.c:3904 (ms 1) Received 'RR_REL_IND' from RR in state IMSI detach initiated (sapi 0)
+<0005> gsm48_mm.c:1846 IMSI has been detached.
+<0005> gsm48_mm.c:507 stopping pending (IMSI detach keepalive) timer T3220
+<0005> gsm48_mm.c:1087 Not camping, wait for CS process to camp, it sends us CELL_SELECTED then.
+send: 00 08 12 00 00 00 00 00 00 00
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 0c 08 00 00 00 01 00 00 00 00 2d 00 33
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+<0002> gsm322.c:5136 exit PLMN process
+<0003> gsm322.c:5137 exit Cell Selection process
+<0003> gsm322.c:834 new state 'C5 choose cell' -> 'C0 null'
+<0003> gsm322.c:841 changing state while power scanning
+<0003> gsm322.c:5151 free sysinfo ARFCN=53
+<0003> gsm322.c:5176 Write stored BA list (mcc=460 mnc=00  China, China Mobile)
+<0005> gsm48_mm.c:1345 exit Mobility Management process
+<0005> gsm48_mm.c:489 stopping pending (periodic loc. upd. delay) timer T3212
+<0001> gsm48_rr.c:5523 exit Radio Ressource process
+<0001> gsm48_rr.c:824 stopping pending timer T_meas
+<0006> gsm48_cc.c:74 exit Call Control processes for 1
+<0007> gsm480_ss.c:239 exit SS processes for 1
+<000f> sim.c:1265 exit SIM client
+<0011> app_mobile.c:181 Power off! (MS 1)
+send: 00 08 0d 00 00 00 01 00 00 00
+send: 00 08 0d 00 00 00 01 00 00 00
+recv: 0e 00 00 00 01 00 00 00
+L1CTL_RESET_CONF
+<0011> app_mobile.c:103 MS '1' has been reset
+full talloc report on 'layer2 context' (total      1 bytes in   2 blocks)
+    msgb                           contains      0 bytes in   1 blocks (ref 0) 0x269f110
+root@ubuntu:~/osmocom-bb/src/host/layer23/src/mobile# ^C
+root@ubuntu:~/osmocom-bb/src/host/layer23/src/mobile#

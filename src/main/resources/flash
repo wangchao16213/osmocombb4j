@@ -1,0 +1,1 @@
+/root/osmocom-bb/src/host/osmocon/osmocon -p /dev/ttyUSB0 -m c123xor /root/osmocom-bb/src/target/firmware/board/compal_e88/layer1.compalram.bin
